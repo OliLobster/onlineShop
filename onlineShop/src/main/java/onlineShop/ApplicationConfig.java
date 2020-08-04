@@ -15,7 +15,7 @@ public class ApplicationConfig {
         return new ServerLogger();
     }
 
-    @Bean
+    @Bean(name="paymentAction")
     public  PaymentAction getPaymentAction() {
          return new PaymentAction();
     }
