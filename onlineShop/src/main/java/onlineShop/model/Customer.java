@@ -80,3 +80,4 @@ public class Customer implements Serializable {
 	public BillingAddress getBillingAddress() {
 		return billingAddress;
 	}
+}

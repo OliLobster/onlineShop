@@ -1,7 +1,6 @@
 package onlineShop.model;
 
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +20,7 @@ public class Product implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	
+
 	@Column(name = "category")
 	private String productCategory;
 
@@ -39,7 +38,7 @@ public class Product implements Serializable {
 
 	@Column(name = "unit")
 	private String unitStock;
-	
+
 	@Transient
 	private MultipartFile productImage;
 
