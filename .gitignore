@@ -12,3 +12,4 @@ buildNumber.properties
 .DS_Store
 onlineShop/src/main/java/onlineShop/ApplicationConfig.java
 onlineShop/src/main/java/onlineShop/ApplicationConfig.java
+onlineShop/src/main/java/onlineShop/SecurityConfig.java
