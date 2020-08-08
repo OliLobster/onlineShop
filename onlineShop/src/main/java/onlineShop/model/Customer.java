@@ -15,9 +15,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "customer")
 public class Customer implements Serializable {
-
+	
 	private static final long serialVersionUID = 2652327633296064143L;
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -52,7 +52,6 @@ public class Customer implements Serializable {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-
 	public String getLastName() {
 		return lastName;
 	}
@@ -79,5 +78,25 @@ public class Customer implements Serializable {
 
 	public BillingAddress getBillingAddress() {
 		return billingAddress;
+	}
+
+	public void setBillingAddress(BillingAddress billingAddress) {
+		this.billingAddress = billingAddress;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
 	}
 }
